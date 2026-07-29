@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aura Fine Dining & Lounge - Experience Michelin-inspired culinary artistry, organic farm-to-table cuisine, and curated wines in a luxury modern ambiance.">
+  <meta name="keywords" content="restaurant, fine dining, steakhouse, luxury restaurant, gourmet food, table reservation, wine bar">
+  <meta name="author" content="Aura Fine Dining">
+  <title>Aura | Luxury Fine Dining & Lounge</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons & FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Animate.css for smooth animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION SECTION
+       ========================================== -->
+  <header class="fixed-top">
+    <!-- Top Utility Bar -->
+    <div class="top-bar d-none d-md-block">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-4">
+          <span><i class="bi bi-geo-alt text-gold me-1"></i> 742 Evergreen Terrace, Culinary District</span>
+          <span><i class="bi bi-clock text-gold me-1"></i> Mon - Sun: 5:00 PM - 11:00 PM</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="tel:+12345678900"><i class="bi bi-telephone-fill text-gold me-1"></i> +1 (234) 567-8900</a>
+          <span class="text-muted">|</span>
+          <a href="#" class="social-top"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-top"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-top"><i class="bi bi-tripadvisor"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky Luxury Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-luxury">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+          <div>
+            <span class="brand-logo-text">AURA</span>
+            <span class="brand-badge">Fine Dining & Lounge</span>
+          </div>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-3"></i>
+        </button>
+
+        <!-- Navigation Links & CTA -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Our Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#offers">Specials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3 mt-3 mt-lg-0">
+            <!-- Cart Indicator Badge -->
+            <a href="#menu" class="btn btn-outline-gold position-relative rounded-circle p-2" title="Selected Items">
+              <i class="bi bi-bag-check fs-5"></i>
+              <span id="cartCounterBadge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark" style="display: none;">0</span>
+            </a>
+            <!-- Main CTA -->
+            <a href="#reservation" class="btn btn-gold">
+              <i class="bi bi-calendar-event me-1"></i> Book a Table
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section id="hero" class="hero-section">
+    <div class="container position-relative z-2">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <!-- Operating Status Pill -->
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>OPEN TONIGHT • RESERVATION RECOMMENDED</span>
+          </div>
+
+          <h1 class="hero-title">
+            A Symphony of <span class="text-gold-gradient">Gastronomic Artistry</span> & Gold Spirits
+          </h1>
+          <p class="hero-lead">
+            Experience Michelin-star inspired culinary creations, farm-to-table organic ingredients, and an unforgettable romantic ambiance in the heart of the culinary district.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#menu" class="btn btn-gold">
+              <i class="bi bi-journals me-1"></i> Explore Menu
+            </a>
+            <a href="#reservation" class="btn btn-outline-gold">
+              <i class="bi bi-bookmark-star me-1"></i> Reserve a Table
+            </a>
+          </div>
+
+          <!-- Hero Key Stats Card -->
+          <div class="hero-stats-card">
+            <div class="stat-item">
+              <div class="stat-number">4.9★</div>
+              <div class="stat-label">1,200+ Reviews</div>
+            </div>
+            <div class="vr bg-secondary opacity-25"></div>
+            <div class="stat-item">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Master Chefs</div>
+            </div>
+            <div class="vr bg-secondary opacity-25"></div>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Organic Sourced</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Accent Card -->
+        <div class="col-lg-5 d-none d-lg-block position-relative">
+          <div class="hero-badge-float">
+            <div class="badge-icon">
+              <i class="bi bi-award-fill"></i>
+            </div>
+            <div>
+              <div class="text-gold font-heading fw-bold">Chef's Signature</div>
+              <div class="text-white small fw-semibold">Black Truffle Steak Tartare</div>
+              <div class="text-warning small"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ABOUT RESTAURANT SECTION
+       ========================================== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="about-img-frame position-relative">
+            <img src="assets/images/about_chef.png" alt="Aura Executive Master Chef" class="img-fluid">
+            <div class="experience-badge">
+              <div class="years">14+</div>
+              <div class="small text-uppercase fw-bold">Years of Culinary Excellence</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <span class="section-subtitle">Our Story & Philosophy</span>
+          <h2 class="section-title">Where Passion Meets Fine Epicurean Craft</h2>
+          <p class="text-muted">
+            Founded in 2012, Aura was born out of a deep reverence for seasonal, sustainable ingredients combined with modern molecular culinary techniques. Every dish on our menu tells a story of heritage, craftsmanship, and uncompromised quality.
+          </p>
+
+          <!-- 4 Core Feature Cards Grid -->
+          <div class="row g-3 my-3">
+            <div class="col-sm-6">
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <i class="bi bi-flower1"></i>
+                </div>
+                <h5 class="text-white fw-bold fs-6 mb-1">100% Organic Farms</h5>
+                <p class="text-muted small mb-0">Directly sourced daily from certified local artisan farms.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <i class="bi bi-person-workspace"></i>
+                </div>
+                <h5 class="text-white fw-bold fs-6 mb-1">Award Master Chefs</h5>
+                <p class="text-muted small mb-0">Led by Michelin-experienced Executive Chef Antoine Laurent.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <i class="bi bi-cup-straw"></i>
+                </div>
+                <h5 class="text-white fw-bold fs-6 mb-1">Sommelier Cellar</h5>
+                <p class="text-muted small mb-0">Over 350 curated vintage wines from top global estates.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <i class="bi bi-stars"></i>
+                </div>
+                <h5 class="text-white fw-bold fs-6 mb-1">Luxury Ambiance</h5>
+                <p class="text-muted small mb-0">Custom lighting, acoustics, and private VIP booth seating.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chef Quote Box -->
+          <div class="chef-quote-box">
+            <p class="mb-1">"Cooking is an intimate language of emotions. We don't just serve meals; we curate memories that linger long after the final course."</p>
+            <span class="text-gold fw-bold small">— Chef Antoine Laurent, Executive Chef</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       OUR MENU SECTION (INTERACTIVE FILTER & SEARCH)
+       ========================================== -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-4">
+        <span class="section-subtitle">Epicurean Selection</span>
+        <h2 class="section-title">Discover Our Gourmet Menu</h2>
+        <p class="text-muted">Explore our carefully curated dishes, crafted using seasonal harvests and premium global imports.</p>
+      </div>
+
+      <!-- Live Menu Search Bar -->
+      <div class="menu-search-box">
+        <i class="bi bi-search search-icon"></i>
+        <input type="text" id="menuSearchInput" placeholder="Search dishes (e.g. Steak, Truffle, Salmon)..." aria-label="Search Menu">
+      </div>
+
+      <!-- Category Filter Nav Tabs -->
+      <ul class="nav menu-tabs" role="tablist">
+        <li class="nav-item"><button class="nav-link active" data-filter="all">All Dishes</button></li>
+        <li class="nav-item"><button class="nav-link" data-filter="starters">Starters</button></li>
+        <li class="nav-item"><button class="nav-link" data-filter="mains">Main Course</button></li>
+        <li class="nav-item"><button class="nav-link" data-filter="desserts">Desserts</button></li>
+        <li class="nav-item"><button class="nav-link" data-filter="beverages">Beverages</button></li>
+      </ul>
+
+      <!-- Menu Grid Cards -->
+      <div class="row g-4" id="menuGrid">
+
+        <!-- Dish 1: Starter -->
+        <div class="col-md-6 col-lg-3 menu-item-col" data-category="starters">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="assets/images/starter_dish.png" alt="Truffle Mushroom Tartare">
+              <span class="dish-tag">Popular</span>
+              <span class="dish-dietary diet-veg" title="Vegetarian">V</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Truffle Tartare</h3>
+                <span class="dish-price">$24</span>
+              </div>
+              <p class="dish-desc">Hand-cut wild mushroom tartare with organic avocado, microgreens, and citrus emulsion.</p>
+              <div class="dish-footer">
+                <div class="dish-rating"><i class="bi bi-star-fill"></i> 4.9 (140)</div>
+                <button class="btn-add-order" title="Add to Order Selection"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 2: Main -->
+        <div class="col-md-6 col-lg-3 menu-item-col" data-category="mains">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="assets/images/main_dish.png" alt="Pan-Seared Wagyu Ribeye">
+              <span class="dish-tag">Chef's Choice</span>
+              <span class="dish-dietary diet-nonveg" title="Non-Vegetarian">NV</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Wagyu Ribeye</h3>
+                <span class="dish-price">$68</span>
+              </div>
+              <p class="dish-desc">A5 Japanese Wagyu steak pan-seared with fresh rosemary, garlic confit & red wine reduction glaze.</p>
+              <div class="dish-footer">
+                <div class="dish-rating"><i class="bi bi-star-fill"></i> 5.0 (280)</div>
+                <button class="btn-add-order" title="Add to Order Selection"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 3: Dessert -->
+        <div class="col-md-6 col-lg-3 menu-item-col" data-category="desserts">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="assets/images/dessert_dish.png" alt="Gold Leaf Chocolate Lava Cake">
+              <span class="dish-tag">Signature</span>
+              <span class="dish-dietary diet-veg" title="Vegetarian">V</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Gold Lava Cake</h3>
+                <span class="dish-price">$22</span>
+              </div>
+              <p class="dish-desc">Warm 70% Valrhona dark chocolate cake topped with 24k edible gold leaf & vanilla bean gelato.</p>
+              <div class="dish-footer">
+                <div class="dish-rating"><i class="bi bi-star-fill"></i> 4.9 (195)</div>
+                <button class="btn-add-order" title="Add to Order Selection"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 4: Beverage -->
+        <div class="col-md-6 col-lg-3 menu-item-col" data-category="beverages">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80" alt="Smoked Bourbon Cocktail">
+              <span class="dish-tag">Crafted</span>
+              <span class="dish-dietary diet-vegan" title="Vegan">VG</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Smoked Bourbon</h3>
+                <span class="dish-price">$18</span>
+              </div>
+              <p class="dish-desc">Artisanal Woodford Reserve bourbon, hickory smoke infuser, orange peel twist & ice sphere.</p>
+              <div class="dish-footer">
+                <div class="dish-rating"><i class="bi bi-star-fill"></i> 4.8 (90)</div>
+                <button class="btn-add-order" title="Add to Order Selection"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 5: Main -->
+        <div class="col-md-6 col-lg-3 menu-item-col" data-category="mains">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80" alt="Atlantic Salmon Fillet">
+              <span class="dish-tag">Fresh Seafood</span>
+              <span class="dish-dietary diet-nonveg" title="Non-Vegetarian">NV</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Atlantic Salmon</h3>
+                <span class="dish-price">$48</span>
+              </div>
+              <p class="dish-desc">Crispy skin wild-caught salmon, saffron risotto, braised asparagus & lemon butter cream sauce.</p>
+              <div class="dish-footer">
+                <div class="dish-rating"><i class="bi bi-star-fill"></i> 4.9 (160)</div>
+                <button class="btn-add-order" title="Add to Order Selection"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 6: Starter -->
+        <div class="col-md-6 col-lg-3 menu-item-col" data-category="starters">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80" alt="Lobster Bisque Soup">
+              <span class="dish-tag">Gourmet</span>
+              <span class="dish-dietary diet-nonveg" title="Non-Vegetarian">NV</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Lobster Bisque</h3>
+                <span class="dish-price">$28</span>
+              </div>
+              <p class="dish-desc">Rich Maine lobster soup finished with cognac crema, herb chervil & toasted brioche croutons.</p>
+              <div class="dish-footer">
+                <div class="dish-rating"><i class="bi bi-star-fill"></i> 4.8 (115)</div>
+                <button class="btn-add-order" title="Add to Order Selection"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 7: Starter -->
+        <div class="col-md-6 col-lg-3 menu-item-col" data-category="starters">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb231fc?w=600&q=80" alt="Burrata Caprese Salad">
+              <span class="dish-tag">Organic</span>
+              <span class="dish-dietary diet-veg" title="Vegetarian">V</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Artisan Burrata</h3>
+                <span class="dish-price">$22</span>
+              </div>
+              <p class="dish-desc">Fresh Pugliese burrata cheese, heirloom vine tomatoes, aged balsamic reduction & fresh basil oil.</p>
+              <div class="dish-footer">
+                <div class="dish-rating"><i class="bi bi-star-fill"></i> 4.9 (88)</div>
+                <button class="btn-add-order" title="Add to Order Selection"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dish 8: Beverage -->
+        <div class="col-md-6 col-lg-3 menu-item-col" data-category="beverages">
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&q=80" alt="Vintage Red Sangria">
+              <span class="dish-tag">Estate Wine</span>
+              <span class="dish-dietary diet-vegan" title="Vegan">VG</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="dish-header">
+                <h3 class="dish-title">Vintage Sangria</h3>
+                <span class="dish-price">$16</span>
+              </div>
+              <p class="dish-desc">Spanish Rioja red wine infused with fresh organic berries, cinnamon bark & Grand Marnier.</p>
+              <div class="dish-footer">
+                <div class="dish-rating"><i class="bi bi-star-fill"></i> 4.7 (75)</div>
+                <button class="btn-add-order" title="Add to Order Selection"><i class="bi bi-plus-lg"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SPECIAL OFFERS SECTION
+       ========================================== -->
+  <section id="offers" class="offers-section">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="section-subtitle">Exclusive Offers</span>
+        <h2 class="section-title">Limited-Time Epicurean Deals</h2>
+        <p class="text-muted">Take advantage of our special dining packages and promotional tasting menus.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Offer 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="offer-card">
+            <div class="offer-badge-ribbon">20% OFF</div>
+            <span class="text-gold small fw-bold text-uppercase">Chef's Tasting Menu</span>
+            <h3 class="font-heading text-white fs-4 fw-bold mt-2">5-Course Gastronomic Journey</h3>
+            <p class="text-muted small">Includes wine pairing, truffle starters, Wagyu main, and dessert sampler.</p>
+
+            <div class="countdown-timer">
+              <div class="time-unit">
+                <span id="cd-hours" class="time-value">05</span>
+                <span class="time-label">Hours</span>
+              </div>
+              <div class="time-unit">
+                <span id="cd-mins" class="time-value">42</span>
+                <span class="time-label">Mins</span>
+              </div>
+              <div class="time-unit">
+                <span id="cd-secs" class="time-value">18</span>
+                <span class="time-label">Secs</span>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <button class="promo-code-btn" onclick="copyPromoCode('AURA20')">
+                <i class="bi bi-copy me-1"></i> AURA20
+              </button>
+              <a href="#reservation" class="btn btn-gold btn-sm">Claim Offer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="offer-card">
+            <div class="offer-badge-ribbon">COMPLIMENTARY</div>
+            <span class="text-gold small fw-bold text-uppercase">Romantic Package</span>
+            <h3 class="font-heading text-white fs-4 fw-bold mt-2">Candlelight Couple's Special</h3>
+            <p class="text-muted small">Reserve a private VIP booth for 2 and receive a free bottle of Vintage Champagne.</p>
+
+            <div class="my-4 py-2">
+              <span class="badge bg-danger text-white px-3 py-2 rounded-pill"><i class="bi bi-heart-fill me-1"></i> Valid Everyday for Dinner</span>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <button class="promo-code-btn" onclick="copyPromoCode('LOVEAURA')">
+                <i class="bi bi-copy me-1"></i> LOVEAURA
+              </button>
+              <a href="#reservation" class="btn btn-gold btn-sm">Claim Offer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="offer-card">
+            <div class="offer-badge-ribbon">15% OFF</div>
+            <span class="text-gold small fw-bold text-uppercase">Weekend Dining</span>
+            <h3 class="font-heading text-white fs-4 fw-bold mt-2">Sunday Luxury Brunch Club</h3>
+            <p class="text-muted small">Enjoy unlimited artisanal mimosa refills & seafood tower for groups of 4 or more.</p>
+
+            <div class="my-4 py-2">
+              <span class="badge bg-primary text-white px-3 py-2 rounded-pill"><i class="bi bi-sun-fill me-1"></i> Sundays 11 AM - 3 PM</span>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <button class="promo-code-btn" onclick="copyPromoCode('BRUNCH15')">
+                <i class="bi bi-copy me-1"></i> BRUNCH15
+              </button>
+              <a href="#reservation" class="btn btn-gold btn-sm">Claim Offer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       IMAGE GALLERY SECTION (LIGHTBOX MODAL)
+       ========================================== -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-4">
+        <span class="section-subtitle">Visual Journey</span>
+        <h2 class="section-title">Explore The Atmosphere</h2>
+        <p class="text-muted">A glimpse into our luxurious dining rooms, open master kitchen, and signature dishes.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="gallery-filter-btns">
+        <button class="gallery-filter-btn active" data-filter="all">All Photos</button>
+        <button class="gallery-filter-btn" data-filter="ambiance">Ambiance & Interior</button>
+        <button class="gallery-filter-btn" data-filter="dishes">Culinary Creations</button>
+        <button class="gallery-filter-btn" data-filter="events">Private Events</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="row g-4" id="galleryGrid">
+        <!-- Photo 1 -->
+        <div class="col-md-6 col-lg-4 gallery-item-col" data-category="ambiance">
+          <div class="gallery-item" data-title="Main Dining Hall & Chandeliers" data-category-name="Ambiance">
+            <img src="assets/images/hero_bg.png" alt="Aura Main Dining Hall">
+            <div class="gallery-overlay">
+              <h4 class="text-white font-heading fs-5 mb-0">Main Dining Hall</h4>
+              <span class="text-gold small">Warm Ambient Glow</span>
+            </div>
+            <div class="gallery-icon"><i class="bi bi-arrows-angle-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="col-md-6 col-lg-4 gallery-item-col" data-category="dishes">
+          <div class="gallery-item" data-title="Pan-Seared Wagyu Ribeye Plating" data-category-name="Culinary">
+            <img src="assets/images/main_dish.png" alt="Wagyu Steak Plating">
+            <div class="gallery-overlay">
+              <h4 class="text-white font-heading fs-5 mb-0">Wagyu Ribeye Plating</h4>
+              <span class="text-gold small">Signature Master Dish</span>
+            </div>
+            <div class="gallery-icon"><i class="bi bi-arrows-angle-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="col-md-6 col-lg-4 gallery-item-col" data-category="dishes">
+          <div class="gallery-item" data-title="24k Gold Leaf Chocolate Lava Cake" data-category-name="Culinary">
+            <img src="assets/images/dessert_dish.png" alt="Gold Lava Cake Dessert">
+            <div class="gallery-overlay">
+              <h4 class="text-white font-heading fs-5 mb-0">24k Gold Lava Cake</h4>
+              <span class="text-gold small">Valrhona Dark Chocolate</span>
+            </div>
+            <div class="gallery-icon"><i class="bi bi-arrows-angle-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="col-md-6 col-lg-4 gallery-item-col" data-category="ambiance">
+          <div class="gallery-item" data-title="Outdoor Terrace Garden Dining" data-category-name="Ambiance">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Outdoor Patio Dining">
+            <div class="gallery-overlay">
+              <h4 class="text-white font-heading fs-5 mb-0">Outdoor Garden Terrace</h4>
+              <span class="text-gold small">Romantic Evening Patio</span>
+            </div>
+            <div class="gallery-icon"><i class="bi bi-arrows-angle-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="col-md-6 col-lg-4 gallery-item-col" data-category="events">
+          <div class="gallery-item" data-title="Private Sommelier Wine Cellar" data-category-name="Events">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80" alt="Sommelier Wine Cellar">
+            <div class="gallery-overlay">
+              <h4 class="text-white font-heading fs-5 mb-0">Reserve Wine Cellar</h4>
+              <span class="text-gold small">Private Tasting Lounge</span>
+            </div>
+            <div class="gallery-icon"><i class="bi bi-arrows-angle-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Photo 6 -->
+        <div class="col-md-6 col-lg-4 gallery-item-col" data-category="dishes">
+          <div class="gallery-item" data-title="Wild Mushroom Truffle Tartare" data-category-name="Culinary">
+            <img src="assets/images/starter_dish.png" alt="Truffle Tartare Appetizer">
+            <div class="gallery-overlay">
+              <h4 class="text-white font-heading fs-5 mb-0">Truffle Tartare</h4>
+              <span class="text-gold small">Artisan Starter</span>
+            </div>
+            <div class="gallery-icon"><i class="bi bi-arrows-angle-expand"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CUSTOMER TESTIMONIALS SECTION
+       ========================================== -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="section-subtitle">Guest Reviews</span>
+        <h2 class="section-title">What Diners & Critics Say</h2>
+        <div class="d-inline-flex align-items-center gap-2 bg-glass px-4 py-2 rounded-pill mt-2">
+          <span class="text-warning fs-5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+          <span class="fw-bold text-white">4.9 / 5.0 Aggregate Rating</span>
+          <span class="text-muted small">(OpenTable & Google Reviews)</span>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Review 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <i class="bi bi-quote quote-icon"></i>
+            <div class="text-warning mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted small mb-4">
+              "Aura is without a doubt one of the finest gastronomic gems in the region. The Wagyu Ribeye melted like butter, and the wine pairings curated by their sommelier were absolute perfection!"
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&q=80" alt="Eleanor Vance" class="client-avatar">
+              <div>
+                <h5 class="text-white font-heading fs-6 fw-bold mb-0">Eleanor Vance</h5>
+                <span class="text-gold small">Food & Wine Magazine Critic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <i class="bi bi-quote quote-icon"></i>
+            <div class="text-warning mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted small mb-4">
+              "We celebrated our 10th wedding anniversary here in the VIP private booth. The ambiance, soft candlelight, and personalized attention from Chef Antoine made it an unforgettable night."
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80" alt="Marcus Sterling" class="client-avatar">
+              <div>
+                <h5 class="text-white font-heading fs-6 fw-bold mb-0">Marcus Sterling</h5>
+                <span class="text-gold small">Verified OpenTable VIP Diner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="testimonial-card">
+            <i class="bi bi-quote quote-icon"></i>
+            <div class="text-warning mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted small mb-4">
+              "The Truffle Tartare and Gold Lava Cake are masterpieces. From the moment you step through the doors, you are treated like royalty. Highly recommend booking in advance!"
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&q=80" alt="Sophia Chen" class="client-avatar">
+              <div>
+                <h5 class="text-white font-heading fs-6 fw-bold mb-0">Sophia Chen</h5>
+                <span class="text-gold small">Local Culinary Blogger</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       RESERVATION & CONTACT SECTION
+       ========================================== -->
+  <section id="reservation" class="reservation-section">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+
+        <!-- Reservation Form Column -->
+        <div class="col-lg-7">
+          <div class="reservation-card">
+            <span class="section-subtitle">Online Booking</span>
+            <h2 class="section-title">Reserve Your Table</h2>
+            <p class="text-muted small mb-4">Secure your dining experience. For parties larger than 10, please contact our events team directly.</p>
+
+            <form id="reservationForm">
+              <input type="hidden" id="selectedTimeSlot" value="7:00 PM">
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="resName" class="form-label">Full Name *</label>
+                  <input type="text" class="form-control form-control-luxury" id="resName" placeholder="e.g. Lord Harrison" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="resEmail" class="form-label">Email Address *</label>
+                  <input type="email" class="form-control form-control-luxury" id="resEmail" placeholder="name@example.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="resPhone" class="form-label">Phone Number *</label>
+                  <input type="tel" class="form-control form-control-luxury" id="resPhone" placeholder="+1 (555) 000-0000" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="resGuests" class="form-label">Party Size *</label>
+                  <select class="form-select form-select-luxury" id="resGuests">
+                    <option value="2">2 Guests (Couple)</option>
+                    <option value="1">1 Guest (Solo Fine Dining)</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4" selected>4 Guests (Standard)</option>
+                    <option value="6">6 Guests (Group)</option>
+                    <option value="8">8 Guests (Party)</option>
+                    <option value="10">10+ Guests (Private Suite)</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="resDate" class="form-label">Date *</label>
+                  <input type="date" class="form-control form-control-luxury" id="resDate" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="resSeating" class="form-label">Seating Preference</label>
+                  <select class="form-select form-select-luxury" id="resSeating">
+                    <option value="Main Dining Hall">Main Dining Hall (Atmospheric)</option>
+                    <option value="Garden Terrace Patio">Garden Terrace Patio (Outdoor)</option>
+                    <option value="VIP Private Booth">VIP Private Booth (Intimate)</option>
+                    <option value="Chef's Counter Bar">Chef's Tasting Counter</option>
+                  </select>
+                </div>
+
+                <!-- Time Slot Pills -->
+                <div class="col-12">
+                  <label class="form-label">Available Time Slot *</label>
+                  <div class="d-flex flex-wrap gap-2">
+                    <div class="time-slot-pill" data-time="5:30 PM">5:30 PM</div>
+                    <div class="time-slot-pill" data-time="6:30 PM">6:30 PM</div>
+                    <div class="time-slot-pill active" data-time="7:30 PM">7:30 PM</div>
+                    <div class="time-slot-pill" data-time="8:30 PM">8:30 PM</div>
+                    <div class="time-slot-pill" data-time="9:30 PM">9:30 PM</div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="resSpecial" class="form-label">Special Occasion / Dietary Notes</label>
+                  <textarea class="form-control form-control-luxury" id="resSpecial" rows="2" placeholder="e.g., Birthday celebration, gluten allergy, quiet table requested..."></textarea>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-gold w-100 py-3">
+                    <i class="bi bi-check2-circle me-1"></i> Confirm Instant Reservation
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact & Map Column -->
+        <div class="col-lg-5" id="contact">
+          <span class="section-subtitle">Find Us</span>
+          <h2 class="section-title">Location & Contact</h2>
+          <p class="text-muted small mb-4">We are conveniently situated in the heart of the downtown culinary avenue with complimentary valet parking for dinner guests.</p>
+
+          <!-- Contact Info Cards -->
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <h5 class="text-white font-heading fs-6 fw-bold mb-1">Our Location</h5>
+              <p class="text-muted small mb-0">742 Evergreen Terrace, Culinary District, Metropolitan City 10021</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <h5 class="text-white font-heading fs-6 fw-bold mb-1">Direct Reservations</h5>
+              <p class="text-muted small mb-0">Phone: +1 (234) 567-8900 | Desk: +1 (234) 567-8901</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <h5 class="text-white font-heading fs-6 fw-bold mb-1">Inquiries & Events</h5>
+              <p class="text-muted small mb-0">Email: concierge@auradining.com</p>
+            </div>
+          </div>
+
+          <!-- Embedded Map View -->
+          <div class="map-container mt-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1680000000000!5m2!1sen!2s" width="100%" height="100%" style="border:0; filter: grayscale(90%) invert(90%) contrast(120%);" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER SECTION
+       ========================================== -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Col 1: Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">AURA</div>
+          <p class="text-muted small pe-lg-4">
+            Aura Fine Dining & Lounge brings together Michelin-inspired cuisine, organic ingredients, and world-class wine pairings in an opulent luxury environment.
+          </p>
+          <div class="mt-3">
+            <a href="#" class="social-icon-btn"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-btn"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon-btn"><i class="bi bi-tripadvisor"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-links-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Our Story</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#offers">Special Offers</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#reservation">Book Table</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Hours Schedule -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-links-title">Opening Hours</h4>
+          <ul class="list-unstyled text-muted small">
+            <li class="d-flex justify-content-between mb-2">
+              <span>Monday - Thursday:</span>
+              <span class="text-white fw-bold">5:00 PM - 11:00 PM</span>
+            </li>
+            <li class="d-flex justify-content-between mb-2">
+              <span>Friday - Saturday:</span>
+              <span class="text-white fw-bold">5:00 PM - 12:00 AM</span>
+            </li>
+            <li class="d-flex justify-content-between mb-2">
+              <span>Sunday Brunch:</span>
+              <span class="text-gold fw-bold">11:00 AM - 3:00 PM</span>
+            </li>
+            <li class="d-flex justify-content-between mt-3 pt-2 border-top border-secondary">
+              <span>Valet Parking:</span>
+              <span class="text-success fw-bold">Complimentary</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-links-title">VIP Dining Club</h4>
+          <p class="text-muted small">Subscribe to receive secret off-menu invitations, chef wine pairing events, and anniversary privileges.</p>
+          <form id="newsletterForm" class="mt-3">
+            <div class="input-group">
+              <input type="email" id="newsletterEmail" class="form-control form-control-luxury" placeholder="Enter your email..." required>
+              <button class="btn btn-gold" type="submit"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom text-center">
+        <p class="mb-0">&copy; 2026 Aura Fine Dining & Lounge. All Rights Reserved. Designed with passion for extraordinary taste.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back To Top Button -->
+  <div id="backToTopBtn" class="back-to-top" title="Back to top">
+    <i class="bi bi-arrow-up-short fs-3"></i>
+  </div>
+
+  <!-- ==========================================
+       MODALS
+       ========================================== -->
+
+  <!-- 1. Reservation Confirmation Modal -->
+  <div class="modal fade" id="bookingConfirmModal" tabindex="-1" aria-labelledby="bookingConfirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-content-luxury">
+        <div class="modal-header modal-header-luxury">
+          <h5 class="modal-title font-heading text-gold" id="bookingConfirmModalLabel">
+            <i class="bi bi-check-circle-fill text-success me-2"></i> Table Reservation Confirmed!
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="text-center mb-4">
+            <div class="display-6 text-white font-heading fw-bold" id="receiptRef">AUR-894120</div>
+            <span class="badge bg-warning text-dark px-3 py-1 rounded-pill mt-1">Status: Confirmed & Guaranteed</span>
+          </div>
+
+          <div class="bg-dark p-3 rounded-3 border border-secondary mb-3">
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted small">Guest Name:</span>
+              <span class="text-white fw-bold small" id="receiptName">-</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted small">Contact:</span>
+              <span class="text-white small" id="receiptContact">-</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted small">Date & Time:</span>
+              <span class="text-gold fw-bold small" id="receiptDateTime">-</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span class="text-muted small">Party & Seating:</span>
+              <span class="text-white small" id="receiptGuests">-</span>
+            </div>
+            <div class="mt-2 text-warning small fst-italic" id="receiptSpecial" style="display: none;"></div>
+          </div>
+
+          <p class="text-muted small text-center mb-0">
+            A confirmation receipt has been sent to your email. We look forward to hosting you at Aura Fine Dining!
+          </p>
+        </div>
+        <div class="modal-footer modal-footer-luxury justify-content-center">
+          <button type="button" class="btn btn-gold px-4" data-bs-dismiss="modal">Done & Print Receipt</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Gallery Lightbox Preview Modal -->
+  <div class="modal fade" id="galleryLightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-content-luxury overflow-hidden">
+        <div class="modal-header modal-header-luxury border-0 pb-0">
+          <div>
+            <h5 class="modal-title font-heading text-white" id="lightboxModalTitle">Aura Gallery</h5>
+            <span class="text-gold small" id="lightboxModalCategory">Atmosphere</span>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-3 text-center">
+          <img id="lightboxModalImage" src="" alt="Gallery Preview" class="img-fluid rounded-4 shadow-lg" style="max-height: 75vh; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JavaScript Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
